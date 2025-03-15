@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens de Star Wars</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Personagens de Star Wars</h1>
+    <div class="container">
+        {% for character in characters %}
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/' + character.image_filename) }}" alt="{{ character.name }}">
+            <h2>{{ character.name }}</h2>
+            <p><strong>Altura:</strong> {{ character.height }} cm</p>
+            <p><strong>Peso:</strong> {{ character.mass }} kg</p>
+            <p><strong>Cor do cabelo:</strong> {{ character.hair_color }}</p>
+            <p><strong>Olhos:</strong> {{ character.eye_color }}</p>
+            <p><strong>Ano de nascimento:</strong> {{ character.birth_year }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
