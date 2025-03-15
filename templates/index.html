@@ -12,7 +12,11 @@
     <div class="container">
         {% for character in characters %}
         <div class="card">
-            <img src="{{ url_for('static', filename='images/' + character.image_filename) }}" alt="{{ character.name }}">
+            {% if character.image_filename %}
+                <img src="{{ url_for('static', filename='images/' + character.image_filename) }}" alt="{{ character.name }}">
+            {% else %}
+                <p>Imagem não disponível</p>
+            {% endif %}
             <h2>{{ character.name }}</h2>
             <p><strong>Altura:</strong> {{ character.height }} cm</p>
             <p><strong>Peso:</strong> {{ character.mass }} kg</p>

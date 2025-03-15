@@ -49,7 +49,7 @@ def get_character_data(character_id):
 
 @app.route("/")
 def home():
-    character_ids = list(range(1,11)) 
+    character_ids = list(range(1,30)) 
     characters = [get_character_data(cid) for cid in character_ids]
     characters = [c for c in characters if c] 
 

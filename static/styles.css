@@ -39,3 +39,8 @@ h1 {
     font-size: 14px;
     color: #bbb;
 }
+
+.card:hover {
+    background: white;
+    -ms-zoom-animation: initial;
+}
