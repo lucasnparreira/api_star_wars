@@ -1,4 +1,4 @@
-# Star Wars Character API with Flask
+# Star Wars API com Flask
 
 Este projeto utiliza Flask para criar uma aplicação web que consome a API de personagens de Star Wars (SWAPI), complementando as informações com imagens dos personagens retiradas da página do Fandom Star Wars Wiki. A aplicação exibe informações sobre os personagens em uma interface web simples.
 
