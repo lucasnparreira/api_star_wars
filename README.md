@@ -63,16 +63,29 @@ Retorno:
 }
 ```
 
-Interface Web
+### Interface Web
 Quando você acessar http://127.0.0.1:5000/ no seu navegador, verá uma página que exibe os personagens com seus respectivos dados e imagens, como mostrado abaixo:
-
+```json
 Nome do Personagem
 Altura
 Peso
 Cor do cabelo
 Cor dos olhos
 Ano de nascimento
+```
 
+### Estrutura de Diretórios
+A estrutura de diretórios do projeto é a seguinte:
+```json
+.
+├── app.py               # Arquivo principal da aplicação Flask
+├── static/
+│   └── images/          # Pasta onde as imagens dos personagens são armazenadas
+├── templates/
+│   └── index.html       # Template HTML para exibição dos personagens
+├── requirements.txt     # Arquivo de dependências
+└── README.md            # Este arquivo contem informacoes sobre o projeto
+```
 
 ### Como Funciona o Código
 
